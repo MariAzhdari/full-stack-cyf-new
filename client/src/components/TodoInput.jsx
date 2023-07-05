@@ -21,15 +21,15 @@ const TodoInput = () => {
  };
  return (
    <>
-     <h1 className="text-center mt-5">Pern Todo List</h1>
-     <form className="d-flex mt-5" onSubmit={onSubmitForm}>
+     <h1 className="text-center  mt-5 "> Todo List</h1>
+     <form className="d-flex mt-5 " onSubmit={onSubmitForm}>
        <input
          type="text"
-         className="form-control"
+         className="form-control form-control-sm mx-1 col-7 mx-auto"
          value={description}
          onChange={(e) => setDescription(e.target.value)}
        />
-       <button className="btn btn-success">Add</button>
+       <button className="btn btn-primary  col-2 mx-auto">Add</button>
      </form>
    </>
  );
