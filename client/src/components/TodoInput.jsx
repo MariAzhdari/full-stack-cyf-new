@@ -8,7 +8,7 @@ const TodoInput = () => {
    e.preventDefault();
    try {
      const body = { description };
-     const response = await fetch("http://localhost:5002/todo", {
+     const response = await fetch("https://full-app-0eu6.onrender.com/todos", {
        method: "POST",
        headers: { "Content-Type": "application/json" },
        body: JSON.stringify(body),
